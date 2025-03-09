@@ -11,7 +11,7 @@ class Daylight < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Darwin_x86_64.tar.gz"
-      sha256 "f3b8acb725240445293442a0329a5cce926abee3c7be4973d42b4461a7d214af"
+      sha256 "3d7e5fdfcd33a22e7db52f94654d729b0b4e433d2f8828982b4cf0c7a711471c"
 
       def install
         bin.install "daylight"
@@ -19,7 +19,7 @@ class Daylight < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Darwin_arm64.tar.gz"
-      sha256 "bc6ce8ec55eeb421c7b492b985651344cde180ff7f8af612df2429c77703aa2b"
+      sha256 "6f59444801f6da6ea8f88bd8a8def45d668bcd44833da8c9543d650261177c94"
 
       def install
         bin.install "daylight"
@@ -31,7 +31,7 @@ class Daylight < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Linux_x86_64.tar.gz"
-        sha256 "14b8e450f8e79376ed235a55c6e3cadfea2d1bd9c065ede511631ceeb23709cd"
+        sha256 "899fa09954a87b830f73b12490caf1b77a438aa3a482747cef3e84116b1a1409"
 
         def install
           bin.install "daylight"
@@ -41,7 +41,7 @@ class Daylight < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Linux_arm64.tar.gz"
-        sha256 "aa982fd4e50010f09477ac6948df5f7605c08e26d01a07af2c4233c6f9d05076"
+        sha256 "2034ab8a64a3def7078e1d50c354d378ccb455e3aa0fb0306bf8fedb0bfc6572"
 
         def install
           bin.install "daylight"
