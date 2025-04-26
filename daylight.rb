@@ -5,21 +5,21 @@
 class Daylight < Formula
   desc "track sunrise / sunset times for your date and location"
   homepage ""
-  version "1.0.0"
+  version "1.1.0"
   license "unlicensed"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Darwin_x86_64.tar.gz"
-      sha256 "3d7e5fdfcd33a22e7db52f94654d729b0b4e433d2f8828982b4cf0c7a711471c"
+      url "https://github.com/jbreckmckye/daylight/releases/download/v1.1.0/daylight_Darwin_x86_64.tar.gz"
+      sha256 "a77ee401f551434a22eba4814dd09a0c3508828f5b26f5befe246c6203e465e4"
 
       def install
         bin.install "daylight"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Darwin_arm64.tar.gz"
-      sha256 "6f59444801f6da6ea8f88bd8a8def45d668bcd44833da8c9543d650261177c94"
+      url "https://github.com/jbreckmckye/daylight/releases/download/v1.1.0/daylight_Darwin_arm64.tar.gz"
+      sha256 "6deb224912704808aa0c26c7d0d4cc5b7e0b4b972e8a422df5313986051c874d"
 
       def install
         bin.install "daylight"
@@ -30,8 +30,8 @@ class Daylight < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Linux_x86_64.tar.gz"
-        sha256 "899fa09954a87b830f73b12490caf1b77a438aa3a482747cef3e84116b1a1409"
+        url "https://github.com/jbreckmckye/daylight/releases/download/v1.1.0/daylight_Linux_x86_64.tar.gz"
+        sha256 "b61c083240aa95c4e5e5e672ab036acf3340d4124bada7ea82dc5f2b4a3c9b44"
 
         def install
           bin.install "daylight"
@@ -40,8 +40,8 @@ class Daylight < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jbreckmckye/daylight/releases/download/v1.0.0/daylight_Linux_arm64.tar.gz"
-        sha256 "2034ab8a64a3def7078e1d50c354d378ccb455e3aa0fb0306bf8fedb0bfc6572"
+        url "https://github.com/jbreckmckye/daylight/releases/download/v1.1.0/daylight_Linux_arm64.tar.gz"
+        sha256 "30ae66f2ae730b03a16543dd97278c74880fcae89332b1b8942dfa8f49a89f70"
 
         def install
           bin.install "daylight"
